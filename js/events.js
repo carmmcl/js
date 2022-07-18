@@ -1,22 +1,25 @@
+
+
 let mostrar = document.getElementById("mostrar");
-let nombre = document.getElementById("inputName").value;
-let apellido = document.getElementById ("inputLastName").value;
-let nota1 =document.getElementById("nota1").value;
+let nombre = document.getElementById("inputName");
+let apellido = document.getElementById ("inputLastName");
+let nota1 =document.getElementById("nota1");
 const datos =document.getElementById ("datos");
 
 mostrar.addEventListener ("click", ()=>{
 
-    const data ={
+    const data = {
         nombre:nombre.value,
         apellido:apellido.value,
         nota1:nota1.value,
     }
 
-    fetch ('archivo.json'
-       ,{
+    fetch ('https://jsonplaceholder.typicode.com/posts',{
         method:'POST',
-        body:JSON.stringify({data}),
-       headers:{'content-type':'application/json; charset=UTF-8',},
+        body:JSON.stringify(data),
+       headers:{
+        "Content-type":"application/json; charset=UTF-8",
+    }
      })
 
     .then ((response) => response.json())
@@ -24,7 +27,8 @@ mostrar.addEventListener ("click", ()=>{
         console.log(data);
         datos.innerHTML =  `<p>${data.nombre}</p>
                             <p>${data.apellido}</p>
-                            <p>${data.nota1}</p>`
+                            <p>${data.nota1}</p>
+                            <p> Datos enviados exitosamente</p>`
 
 
     })
