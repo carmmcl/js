@@ -1,0 +1,21 @@
+/*Header*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+    .body, .btn {
+        background-color:pink; }
+  
+    p {
+        color: gray; }
+      
+      .btn {
+        background-color: lightpink; }
+
+        .btn:hover {
+            background-color: #bd7afc; }
+      
+      .form-label {
+        color: gray; }
+      
