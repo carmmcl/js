@@ -19,5 +19,5 @@ console.log (pars[1].innerHTML);
 */
 let divparr = document.getElementById ("parr");
 let newParagraph=document.createElement("p");
-newParagraph.innerText="Para obtener el promedio, ingrese los datos a continuación";
+newParagraph.innerText="Para obtener el promedio, ingrese los datos a continuación; cada estudiante debe tener su correspondiente número de Id";
 divparr.append(newParagraph);

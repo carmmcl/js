@@ -25,52 +25,55 @@
                  </ul>
               </div>
         </div>
-    </nav>
+      </nav>
     </header>
-    <main class="container">
-      <div >
-        <div class="row">
-          <div class="col">
-           <h3>Notas y Promedios</h3>
+      <main class="container">
+        <div>
+          <div class="row">
+            <div class="col">
+              <h3>Notas y Promedios</h3>
             <div id="parr">
-        <p class="parraff"> Bienvenido a la web de notas y promedios. </p>
-      </div>
-        <div class="col-6">
-          <label for="inputId" class="form-label">ID</label>
-          <input type="number" class="form-control" id="inputId" placeholder="Id"> 
-        </div>                              
-        <div class="col-12">
-          <label for="inputName" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="inputName" placeholder="Nombre">
-        </div>                          
-        <div class="col-12">
-          <label for="inputLastName" class="form-label">Apellido</label>
-          <input type="text" class="form-control" id="inputLastName" placeholder="Apellido">
-        </div>
-        <div class="col-6">
-          <label for="nota1" class="form-label">Nota cuatrimestre 1</label>
-          <input type="number" class="form-control" id="nota1" placeholder="Nota cuatrimestre 1">
-          </select>
-        </div>
-        <div class="col-6">
-          <label for="nota1" class="form-label">Nota cuatrimestre 2</label>
-          <input type="number" class="form-control" id="nota2" placeholder="Nota cuatrimestre 2">
-          </select>
-        </div>
-        <div class="col-12">
-          <button id = "button1"  class="btn btn-secondary" class="container text-center">Enviar</button>
-        </div>            
+              <p class="parraff"> Bienvenido a la web de notas y promedios. </p>
+            </div>
+            <form action="">
+              <div class="col-6">
+                <label for="inputId" class="form-label">ID</label>
+                <input type="number" class="form-control" id="inputId" placeholder="Id"> 
+              </div>                              
+              <div class="col-12">
+                <label for="inputName" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+              </div>                          
+              <div class="col-12">
+                <label for="inputLastName" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="inputLastName" placeholder="Apellido">
+              </div>
+              <div class="col-6">
+                <label for="nota1" class="form-label">Nota cuatrimestre 1</label>
+                <input type="number" class="form-control" id="nota1" placeholder="Nota cuatrimestre 1">          
+              </div>
+              <div class="col-6">
+                <label for="nota2" class="form-label">Nota cuatrimestre 2</label>
+                <input type="number" class="form-control" id="nota2" placeholder="Nota cuatrimestre 2">          
+              </div>
+              <div class="col-12">
+                <button id = "button1"  class="btn btn-secondary" class="container text-center">Enviar</button>
+              </div>  
+              <div class="col-12">
+                <button id = "button2"  type="reset" class="btn btn-secondary">Limpiar</button>
+              </div>
+            </form>           
           </div>
           <div class="col" >
             <div class="container text-center" >   
               <h5>Listado de estudiantes</h5>   
-              <p id="students">
-              </p>
+              <div id="students">
             </div>
+          </div>
             <div class="container text-center">  
               <button id = "mostrar"  class="btn btn-secondary">Mostrar</button>
-              </div>  
-          </div>
+            </div>  
+            </div>
           <div class="col">
             <div class="container text-center" > 
              <h5>Informacion base de datos</h5>   
@@ -83,15 +86,12 @@
             </div>
           </div>
         </div>
+      </div>    
       </div>
-    
-  </div>
-     </main>
-     
+     </main>     
      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
      <script src="./js/elements.js"></script>  
-     <script src="./js/events.js"></script>
-     
+     <script src="./js/index.js"></script>  
      
  </body>
  </html>
